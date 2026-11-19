@@ -14,10 +14,10 @@ namespace Apex.Catering.Data
         public int NoOfguests { get; set; }
 
         [Required]
-
         public int MenuId { get; set; }
 
-        public List<Menu>? Menus { get; set; }
+        public Menu Menu { get; set; }
+
 
     }
 }
