@@ -11,5 +11,7 @@ namespace Apex.Catering.Data
 
         [Required]
         public decimal Price { get; set; }
+
+        public List<MenuFoodItem>? MenuFoodItems { get; set; }
     }
 }

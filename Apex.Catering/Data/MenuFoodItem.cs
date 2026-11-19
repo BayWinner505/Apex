@@ -10,6 +10,8 @@ namespace Apex.Catering.Data
         [Required]
         public int FoodItemId { get; set; }
 
+        public List<Menu>? Menus { get; set; }
+        public List<FoodItem>? FoodItems { get; set; }>
 
     }
 }

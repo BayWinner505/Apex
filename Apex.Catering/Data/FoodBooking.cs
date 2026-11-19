@@ -17,5 +17,7 @@ namespace Apex.Catering.Data
 
         public int MenuId { get; set; }
 
+        public List<Menu>? Menus { get; set; }
+
     }
 }
