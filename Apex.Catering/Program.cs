@@ -7,6 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();  // Register controllers with the framework
 builder.Services.AddOpenApi();      // Register OpenAPI/Swagger services
 
+// Register database context with the framework
+builder.Services.AddDbContext<BookingsDbContext>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
