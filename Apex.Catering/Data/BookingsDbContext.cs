@@ -41,8 +41,17 @@ namespace Apex.Catering.Data
                 .WithMany(m => m.FoodBookings)            
                 .HasForeignKey(fb => fb.MenuId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            // Insert sedd data for FoodItems
+            builder.Entity<FoodItem>().HasData(
+                new FoodItem { Id = 1, Name = "Chicken Tikka Masala", Description = "A popular Indian dish made with marinated chicken cooked in a creamy tomato sauce.", Price = 12.99m },
+                new FoodItem { Id = 2, Name = "Beef Stroganoff", Description = "A Russian dish made with sautéed pieces of beef served in a sauce with sour cream.", Price = 14.99m },
+                new FoodItem { Id = 3, Name = "Vegetable Stir Fry", Description = "A quick and healthy dish made with a variety of fresh vegetables stir-fried in a savory sauce.", Price = 10.99m }
+            );
+
+
         }
-    
+
     }
 
 }   
