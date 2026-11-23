@@ -49,6 +49,20 @@ namespace Apex.Catering.Data
                 new FoodItem { Id = 3, Name = "Vegetable Stir Fry", Description = "A quick and healthy dish made with a variety of fresh vegetables stir-fried in a savory sauce.", Price = 10.99m }
             );
 
+            // Insert seed data for Menus
+            builder.Entity<Menu>().HasData(
+                new Menu { Id = 1, Name = "Indian Cuisine" },
+                new Menu { Id = 2, Name = "Russian Cuisine" },
+                new Menu { Id = 3, Name = "Vegetarian Cuisine" }
+            );
+
+            // Insert seed data for MenuFoodItems
+            builder.Entity<MenuFoodItem>().HasData(
+                new MenuFoodItem { MenuId = 1, FoodItemId = 1 },
+                new MenuFoodItem { MenuId = 1, FoodItemId = 3 },
+                new MenuFoodItem { MenuId = 2, FoodItemId = 2 },
+                new MenuFoodItem { MenuId = 3, FoodItemId = 3 }
+            );
 
         }
 
