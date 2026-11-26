@@ -26,7 +26,6 @@
                 new FoodItem { Name = "Chocolate Cake", Description = "Rich and moist chocolate cake with ganache frosting", Price = 6.99m },
                 new FoodItem { Name = "Grilled Salmon", Description = "Freshly grilled salmon with lemon butter sauce", Price = 15.99m },
                 new FoodItem { Name = "Vegetable Stir Fry", Description = "A quick and healthy dish made with a variety of fresh vegetables stir-fried in a savory sauce.", Price = 10.99m },
-                new FoodItem { Name = "Beef Stroganoff", Description = "A Russian dish made with sautéed pieces of beef served in a sauce with sour cream.", Price = 14.99m },
                 new FoodItem { Name = "Spaghetti Bolognese", Description = "Classic Italian pasta dish with rich meat sauce", Price = 11.99m },
                 new FoodItem { Name = "stracciatella Gelato", Description = "Italian gelato with chocolate shavings", Price = 4.99m },
                 new FoodItem { Name = "Tiramisu", Description = "Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream", Price = 6.99m },
