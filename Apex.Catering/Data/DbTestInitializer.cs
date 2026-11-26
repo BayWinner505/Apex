@@ -36,11 +36,33 @@
 
             var menus = new List<Menu>
             {
-                new Menu { Name = "Desserts" },
                 new Menu { Name = "Italian Cuisine" },
                 new Menu { Name = "Indian Cuisine" },
-                new Menu { Name = "Western Cuisine" }
+                new Menu { Name = "Western Cuisine" },
+                new Menu { Name = "Desserts" }
             };
+            _context.Menus.AddRange(menus);
+            _context.SaveChanges();
+
+            var menufooditems = new List<MenuFoodItem>
+            {
+                new MenuFoodItem{ MenuId = 1 , FoodItemId = 7 },
+                new MenuFoodItem{ MenuId = 1 , FoodItemId = 6 },
+                new MenuFoodItem{ MenuId = 1 , FoodItemId = 11 },
+                new MenuFoodItem{ MenuId = 1 , FoodItemId = 7 },
+                new MenuFoodItem{ MenuId = 2 , FoodItemId = 1 },
+                new MenuFoodItem{ MenuId = 2 , FoodItemId = 2 },
+                new MenuFoodItem{ MenuId = 2 , FoodItemId = 3 },
+                new MenuFoodItem{ MenuId = 3 , FoodItemId = 5 },
+                new MenuFoodItem{ MenuId = 3 , FoodItemId = 9 },
+                new MenuFoodItem{ MenuId = 3 , FoodItemId = 10 },
+                new MenuFoodItem{ MenuId = 4 , FoodItemId = 12 },
+                new MenuFoodItem{ MenuId = 4 , FoodItemId = 13 },
+                new MenuFoodItem{ MenuId = 4 , FoodItemId = 14 },
+            };
+            _context.MenuFoodItems.AddRange(menufooditems);
+            _context.SaveChanges();
+
 
 
 
