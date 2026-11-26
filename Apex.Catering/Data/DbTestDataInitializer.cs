@@ -1,9 +1,9 @@
 ﻿namespace Apex.Catering.Data
 {
-    public class DbTestInitializer
+    public class DbTestDataInitializer
     {
         private readonly BookingsDbContext _context;
-        public DbTestInitializer(BookingsDbContext context)
+        public DbTestDataInitializer(BookingsDbContext context)
         {
             _context = context;
         }

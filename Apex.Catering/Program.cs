@@ -1,3 +1,4 @@
+using Apex.Catering.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +10,8 @@ builder.Services.AddOpenApi();      // Register OpenAPI/Swagger services
 
 // Register database context with the framework
 builder.Services.AddDbContext<BookingsDbContext>();
+// Add the DbTestInitializer as a scoped service
+builder.Services.AddScoped<DbTestDataInitializer>();
 
 var app = builder.Build();
 
